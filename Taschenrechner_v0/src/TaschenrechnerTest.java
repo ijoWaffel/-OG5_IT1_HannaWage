@@ -30,7 +30,14 @@ public class TaschenrechnerTest {
 		case '1':
 			System.out.println("4 + 5 = " + ts.add(4, 5));
 			break;
-			
+		case '2':
+			System.out.println("4 - 5 = " + ts.sub(4, 5));
+			break;
+		case '3':
+			System.out.println("4 * 5 = " + ts.mul(4, 5));
+			break;
+		case '4':
+			break;
 			
 		  //  add your code here
 		  
