@@ -21,6 +21,20 @@ public class MyActionListener implements ActionListener {
 
 			 f.lblFuellstand.setText(""+fuellstand);
 		}
+		
+		if (obj == f.btnVerbrauchen) {
+			double fuellstand = f.myTank.getFuellstand();
+			fuellstand = fuellstand -2;
+			if(fuellstand <0) {
+				 f.myTank.setFuellstand(0);
+				 f.lblFuellstand.setText(""+0);
+			}else {
+			
+			 f.myTank.setFuellstand(fuellstand);
+
+			 f.lblFuellstand.setText(""+fuellstand);
+			}
+		}
 
 	}
 }
