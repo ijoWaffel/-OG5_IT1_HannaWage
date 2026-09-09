@@ -7,6 +7,7 @@ import java.awt.Frame;
 import java.awt.GridLayout;
 import java.awt.Label;
 import java.awt.Panel;
+import javax.swing.JProgressBar;
 
 @SuppressWarnings("serial")
 public class TankSimulator extends Frame {
@@ -20,6 +21,7 @@ public class TankSimulator extends Frame {
 	public Button btnEinfuellen = new Button("Einfüllen");
 	public Button btnVerbrauchen = new Button("Verbrauchen");
 	public Button btnZuruecksetzen = new Button("Zurücksetzen");
+	public JProgressBar progressBar = new JProgressBar(1,0,200);
 	
 	private Panel pnlNorth = new Panel();
 	private Panel pnlCenter = new Panel(new FlowLayout());
@@ -35,6 +37,7 @@ public class TankSimulator extends Frame {
 		this.lblUeberschrift.setFont(new Font("", Font.BOLD, 16));
 		this.pnlNorth.add(this.lblUeberschrift);
 		this.pnlCenter.add(this.lblFuellstand);
+		this.pnlCenter.add(this.progressBar);
 		this.pnlSouth.add(this.btnEinfuellen);
 		this.pnlSouth.add(this.btnVerbrauchen);
 		this.pnlSouth.add(this.btnZuruecksetzen);
