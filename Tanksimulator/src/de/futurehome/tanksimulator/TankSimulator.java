@@ -16,6 +16,7 @@ public class TankSimulator extends Frame {
 	
 	private Label lblUeberschrift = new Label("Tank-Simulator");
 	public  Label lblFuellstand = new Label("     ");
+	public  Label lblFuellstandProzent = new Label("     ");
 	
 	public Button btnBeenden = new Button("Beenden");
 	public Button btnEinfuellen = new Button("Einfüllen");
@@ -24,7 +25,7 @@ public class TankSimulator extends Frame {
 	public JProgressBar progressBar = new JProgressBar(1,0,200);
 	
 	private Panel pnlNorth = new Panel();
-	private Panel pnlCenter = new Panel(new FlowLayout());
+	private Panel pnlCenter = new Panel(new GridLayout(1, 0));
 	private Panel pnlSouth = new Panel(new GridLayout(1, 0));
 
 	private MyActionListener myActionListener = new MyActionListener(this);
@@ -37,6 +38,7 @@ public class TankSimulator extends Frame {
 		this.lblUeberschrift.setFont(new Font("", Font.BOLD, 16));
 		this.pnlNorth.add(this.lblUeberschrift);
 		this.pnlCenter.add(this.lblFuellstand);
+		this.pnlCenter.add(this.lblFuellstandProzent);
 		this.pnlCenter.add(this.progressBar);
 		this.pnlSouth.add(this.btnEinfuellen);
 		this.pnlSouth.add(this.btnVerbrauchen);

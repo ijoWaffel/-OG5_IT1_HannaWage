@@ -16,27 +16,39 @@ public class MyActionListener implements ActionListener {
 		
 		if (obj == f.btnEinfuellen) {
 			 double fuellstand = f.myTank.getFuellstand();
-			 fuellstand = fuellstand + 5;
-			 f.myTank.setFuellstand(fuellstand);
+			 double fuellstandProzent;
 			 
+			 fuellstand = fuellstand + 5;
+			 fuellstandProzent=fuellstand*100/200;
+			 
+			 f.myTank.setFuellstand(fuellstand);
 			 f.progressBar.setValue((int) fuellstand);
 
 			 f.lblFuellstand.setText(""+fuellstand);
+			 f.lblFuellstandProzent.setText(""+fuellstandProzent+"%");
 		}
 		
 		if (obj == f.btnVerbrauchen) {
 			double fuellstand = f.myTank.getFuellstand();
+			double fuellstandProzent;
+			
 			fuellstand = fuellstand -2;
+			fuellstandProzent=fuellstand*100/200;
+			 
 			if(fuellstand <0) {
+				
 				 f.myTank.setFuellstand(0);
-				 f.progressBar.setValue((int) fuellstand);
+				 f.progressBar.setValue(0);
+				 
 				 f.lblFuellstand.setText(""+0);
+				 f.lblFuellstandProzent.setText(""+0+"%");
 			}else {
 			
 			 f.myTank.setFuellstand(fuellstand);
 			 f.progressBar.setValue((int) fuellstand);
 
 			 f.lblFuellstand.setText(""+fuellstand);
+			 f.lblFuellstandProzent.setText(""+fuellstandProzent+"%");
 			}
 		}
 		
@@ -46,6 +58,7 @@ public class MyActionListener implements ActionListener {
 			 f.progressBar.setValue(0);
 
 			 f.lblFuellstand.setText(""+0);
+			 f.lblFuellstandProzent.setText(""+0+"%");
 		}
 
 	}
