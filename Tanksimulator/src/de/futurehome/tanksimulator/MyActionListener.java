@@ -31,8 +31,10 @@ public class MyActionListener implements ActionListener {
 		if (obj == f.btnVerbrauchen) {
 			double fuellstand = f.myTank.getFuellstand();
 			double fuellstandProzent;
+			int verbrauch= f.slider.getValue();
 			
-			fuellstand = fuellstand -2;
+			
+			fuellstand = fuellstand -verbrauch;
 			fuellstandProzent=fuellstand*100/200;
 			 
 			if(fuellstand <0) {
