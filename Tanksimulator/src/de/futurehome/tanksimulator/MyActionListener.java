@@ -18,6 +18,8 @@ public class MyActionListener implements ActionListener {
 			 double fuellstand = f.myTank.getFuellstand();
 			 fuellstand = fuellstand + 5;
 			 f.myTank.setFuellstand(fuellstand);
+			 
+			 f.progressBar.setValue((int) fuellstand);
 
 			 f.lblFuellstand.setText(""+fuellstand);
 		}
@@ -27,10 +29,12 @@ public class MyActionListener implements ActionListener {
 			fuellstand = fuellstand -2;
 			if(fuellstand <0) {
 				 f.myTank.setFuellstand(0);
+				 f.progressBar.setValue((int) fuellstand);
 				 f.lblFuellstand.setText(""+0);
 			}else {
 			
 			 f.myTank.setFuellstand(fuellstand);
+			 f.progressBar.setValue((int) fuellstand);
 
 			 f.lblFuellstand.setText(""+fuellstand);
 			}
@@ -39,6 +43,7 @@ public class MyActionListener implements ActionListener {
 		if (obj == f.btnZuruecksetzen) {
 			
 			 f.myTank.setFuellstand(0);
+			 f.progressBar.setValue(0);
 
 			 f.lblFuellstand.setText(""+0);
 		}
