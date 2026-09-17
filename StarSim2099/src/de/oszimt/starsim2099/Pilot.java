@@ -24,6 +24,10 @@ public class Pilot {
 		this.name = name;
 	}
 	
+	public Pilot() {
+		
+	}
+
 	public double getPosX() {
 		return posX;
 	}
