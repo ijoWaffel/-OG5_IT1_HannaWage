@@ -17,7 +17,9 @@ public class Ladung {
 	// Methoden
 	public Ladung() {
 		setTyp(" ");
-		
+		setMasse(0);
+		setPosX(0);
+		setPosY(0);
 	}
 	
 	public void setTyp( String newtyp) {
