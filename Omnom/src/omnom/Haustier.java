@@ -12,10 +12,18 @@ public class Haustier {
 	//Methoden 
 	
 	public Haustier() {
-		
+		setHunger(100);
+		setMuede(100);
+		setZufrieden(100);
+		setGesund(100);
+		setName("");
 	}
 	public Haustier(String name ) {
-		
+		setHunger(100);
+		setMuede(100);
+		setZufrieden(100);
+		setGesund(100);
+		setName(name);
 	}
 	
 	public int getHunger() {
@@ -48,4 +56,20 @@ public class Haustier {
 	public void setName(String name) {
 		this.name = name;
 	} 
+	
+	public void fuettern(int anzahl) {
+		
+	}
+	
+	public void schlafen(int dauer) {
+		
+	}
+	
+	public void spielen ( int dauer) {
+		
+	}
+	
+	public void heilen() {
+		
+	}
 }
