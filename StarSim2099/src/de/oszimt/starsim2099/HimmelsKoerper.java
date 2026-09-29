@@ -1,11 +1,11 @@
 package de.oszimt.starsim2099;
 
-public class HimmelsKoerper {
+public class HimmelsKoerper extends ObjektImRaum{
 	
 	private String name;
 	
 	public HimmelsKoerper() {
-		
+		super();
 	}
 	
 	public String getName() {

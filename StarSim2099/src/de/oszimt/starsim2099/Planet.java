@@ -9,8 +9,7 @@ package de.oszimt.starsim2099;
 public class Planet  extends HimmelsKoerper {
 
 	// Attribute
-	private double posX;
-	private double posY; 
+	
 	private int anzahlHafen;
 	
 	
@@ -21,21 +20,6 @@ public class Planet  extends HimmelsKoerper {
 		super();
 	}
 
-	public double getPosX() {
-		return posX;
-	}
-
-	public void setPosX(double posX) {
-		this.posX = posX;
-	}
-
-	public double getPosY() {
-		return posY;
-	}
-
-	public void setPosY(double posY) {
-		this.posY = posY;
-	}
 
 	public int getAnzahlHafen() {
 		return anzahlHafen;
