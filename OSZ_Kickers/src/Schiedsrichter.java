@@ -1,7 +1,7 @@
 
 public class Schiedsrichter extends Personen{
 	
-	int gepfiffeneSpiele;
+	private int gepfiffeneSpiele;
 
 	public Schiedsrichter(String name, int telefonnummer, boolean jahresbeitrag, int gepfiffeneSpiele) {
 		super(name, telefonnummer, jahresbeitrag);
