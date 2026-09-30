@@ -1,4 +1,4 @@
 
-public class Spieler {
+public class Spieler extends Personen {
 
 }

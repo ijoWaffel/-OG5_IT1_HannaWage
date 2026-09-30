@@ -1,4 +1,4 @@
 
-public class Mannschaftsleiter {
+public class Mannschaftsleiter extends Spieler{
 
 }

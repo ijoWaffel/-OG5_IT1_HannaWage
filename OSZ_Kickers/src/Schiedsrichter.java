@@ -1,4 +1,4 @@
 
-public class Schiedsrichter {
+public class Schiedsrichter extends Personen{
 
 }

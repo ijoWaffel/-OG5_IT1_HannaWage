@@ -1,4 +1,4 @@
 
-public class Trainer {
+public class Trainer extends Personen {
 
 }
